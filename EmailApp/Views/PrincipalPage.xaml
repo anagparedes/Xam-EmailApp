@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:EmailApp.ViewModels"
+             x:Class="EmailApp.Views.PrincipalPage"
+             x:Name="principalPage"
+             Title="Main"
+             BackgroundColor="#161616">
+    <ContentPage.BindingContext>
+        <viewModels:PrincipalViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Name="MenuItem1" Order="Primary" Icon="mediamessage.png"  Priority="0" 
+        Command="{Binding AddMailCommand }" CommandParameter="0"/>
+        </ContentPage.ToolbarItems>
+        <ContentPage.Content>
+            <ListView HasUnevenRows="True" SelectedItem="{Binding SelectedMail}" ItemsSource="{Binding Mails}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete" 
+                                      Command="{Binding Source={x:Reference principalPage}, Path=BindingContext.DeleteCommand}" 
+                                      CommandParameter="{Binding}"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Spacing="0" Padding="15,15,12,12" Orientation="Vertical" >
+                            <Label 
+                             Text="{Binding From}"
+                             TextColor="White"
+                             FontAttributes="Bold"
+                             FontSize="Medium"
+                             HorizontalOptions="Start"/>
+                            <Label 
+                             Text="{Binding Subject }"
+                             TextColor="White"
+                             FontSize="Subtitle"
+                             HorizontalOptions="FillAndExpand"/>
+                            <Label 
+                             Text="{Binding Body }"
+                             TextColor="White"
+                             FontSize="Small"
+                             HorizontalOptions="FillAndExpand"/>
+
+                            <Label 
+                             Text="{Binding Date , StringFormat='{}{0:ddd\\ dd\\ hh\\:mm\\ tt}'}"
+                             TextColor="#0077d4"
+                             FontSize="Small"
+                              HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                    </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:EmailApp.ViewModels" 
+             x:DataType="viewmodels:AddMailViewModel"
+             x:Class="EmailApp.Views.AddMailPage"
+         
+             BackgroundColor="#161616">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Text="Enviar" Order="Primary" Icon="paperplane.png"  Priority="0" 
+        Command="{Binding SendMail }" CommandParameter="1"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+     
+        <StackLayout Padding="12,0,12,12" Spacing="6">
+            <Entry x:Name="toEntry" Text="{Binding To}" Placeholder="To" TextColor="#E3E3E3" PlaceholderColor="White"></Entry>
+            <Entry x:Name="fromEntry" Text="{Binding From}" Placeholder="From" TextColor="#E3E3E3" PlaceholderColor="White"></Entry>
+            <Entry x:Name="subjectEntry" Text="{Binding Subject}" Placeholder="Subject" TextColor="#E3E3E3" PlaceholderColor="White"></Entry>
+            <Entry x:Name="composeEntry" Text="{Binding Body}"  TextColor="#E3E3E3" Placeholder="Compose" HeightRequest="200" PlaceholderColor="White"></Entry>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

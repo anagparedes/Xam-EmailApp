@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:EmailApp.ViewModels" x:DataType="viewmodels:LoginViewModel"
+             x:Class="EmailApp.Views.LoginPage"
+             BackgroundColor="#161616">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="logo.png" WidthRequest="180" HeightRequest="180"></Image>
+            <Entry x:Name="emailEntry" Text="{Binding Email}" Placeholder="Email" TextColor="#E3E3E3" PlaceholderColor="White"></Entry>
+            <Entry  x:Name="passwordEntry" Text ="{Binding Password}" Placeholder="Password" IsPassword="True" TextColor="#E3E3E3" PlaceholderColor="White"></Entry>
+            <Button x:Name="loginButton" VerticalOptions = "Center" Command="{Binding LoginCommand}"
+              Text="Login"     
+              TextColor="White"
+              FontAttributes="Bold"      
+              BackgroundColor="#373CED"
+              BorderColor="#373CED"     
+              BorderWidth="1.5"
+              CornerRadius="50"
+              ></Button>
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account?" TextColor="#E3E3E3"/>
+                        <Span Text=" Register" TextColor="#373CED" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+                <!--<Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
+                </Label.GestureRecognizers>-->
+            </Label>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

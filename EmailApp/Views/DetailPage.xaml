@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:viewModels="clr-namespace:EmailApp.ViewModels"
+             x:Class="EmailApp.Views.DetailPage"
+            x:DataType="viewModels:DetailViewModel"
+             BackgroundColor="#161616"
+             >
+    <ContentPage.BindingContext>
+        <viewModels:PrincipalViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="StartAndExpand" Padding="15,15,15,15"  Orientation="Vertical">
+            <Label x:Name="subjectEntry" Text="{Binding Subject}" HorizontalOptions="Start" FontSize="Title"  TextColor="#E3E3E3" ></Label>
+            <Label x:Name="toEntry" Text="{Binding To}" HorizontalOptions="Start" FontSize="Title"  TextColor="#E3E3E3" ></Label>
+            <Label x:Name="fromEntry" Text="{Binding From}" HorizontalOptions="Fill" FontSize="Small" TextColor="#E3E3E3"></Label>
+            <Label x:Name="dateEntry" Text="{Binding Date , StringFormat='{}{0:ddd\\ dd\\ hh\\:mm\\ tt}'}" HorizontalOptions="StartAndExpand" TextColor="#E3E3E3" HeightRequest="50"></Label>
+            <Label x:Name="bodyEntry" Text="{Binding Body}" HorizontalOptions="Center" TextColor="#E3E3E3"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
