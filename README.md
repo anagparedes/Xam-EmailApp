@@ -13,7 +13,9 @@ An email app using MVVM
 
 ![Image text](https://github.com/anagparedes/Xam-EmailApp/blob/master/EmailApp.Android/Resources/drawable/main1.png)
 
+
 **Compose Page**
+
 ![Image text](https://github.com/anagparedes/Xam-EmailApp/blob/master/EmailApp.Android/Resources/drawable/compose1.png)
 
 
