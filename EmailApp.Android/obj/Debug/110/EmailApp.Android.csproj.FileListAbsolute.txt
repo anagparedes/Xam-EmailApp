@@ -580,3 +580,14 @@ C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debu
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\mediamessage.png
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\women.png
 C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\update.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\details2.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\login1.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\login2.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\login3.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\main1.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\main2.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\main3.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\compose1.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\delete1.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\delete2.png
+C:\Users\Ana\Desktop\Mobile Dev HW\Practica#3\EmailApp\EmailApp.Android\obj\Debug\110\res\drawable\details1.png

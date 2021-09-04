@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "R1H6mzIWGuO9gi457JH+iRHT8LU3kXS4DyO3hun84/BWmhYB4jHPu840tVnxF+oKfD7EhhHG/JqGMrcf2oGIhA==",
+  "dgSpecHash": "bU/5uCyNKlGXPoSvw4nNC/Ndyo+s9VzHcwnaBLyYstqOI8A8aXOm2mIyBTAgFFStd3R8zTbiOaGmjwev9HpzEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ana\\Desktop\\Mobile Dev HW\\Practica#3\\EmailApp\\EmailApp.Android\\EmailApp.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ana\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
-    "C:\\Users\\Ana\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
     "C:\\Users\\Ana\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",

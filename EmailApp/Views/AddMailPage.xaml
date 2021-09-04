@@ -8,7 +8,7 @@
              BackgroundColor="#161616">
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="MenuItem1" Text="Enviar" Order="Primary" Icon="paperplane.png"  Priority="0" 
-        Command="{Binding SendMail }" CommandParameter="1"/>
+        Command="{Binding SendMailCommand }" CommandParameter="1"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
      

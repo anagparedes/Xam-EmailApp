@@ -20,7 +20,7 @@ namespace EmailApp.ViewModels
         public DateTime Date { get { return _date; } set { _date = value; } }
         
         
-        public ICommand SendMail { get; }
+        public ICommand SendMailCommand { get; }
 
         private ObservableCollection<Mail> _mails;
 
@@ -29,7 +29,7 @@ namespace EmailApp.ViewModels
         public AddMailViewModel(ObservableCollection<Mail> mails)
         {
             _mails = mails;
-            SendMail = new Command(async()=>
+            SendMailCommand = new Command(async()=>
             {
                 mails.Add(new Mail(To, From, Subject, Body, Date));
                 await App.Current.MainPage.Navigation.PopAsync();

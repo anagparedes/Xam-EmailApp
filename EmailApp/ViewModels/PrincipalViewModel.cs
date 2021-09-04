@@ -12,6 +12,8 @@ namespace EmailApp.ViewModels
 {
     public class PrincipalViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public ObservableCollection<Mail> Mails { get; set; } = new ObservableCollection<Mail>();
         private Mail _mail;
         public Mail SelectedMail
@@ -29,6 +31,8 @@ namespace EmailApp.ViewModels
                 {
                     SelectedMailCommand.Execute(_mail);
                 }
+                SelectedMail = null;
+               
             }
         
         
@@ -55,7 +59,7 @@ namespace EmailApp.ViewModels
             await App.Current.MainPage.Navigation.PushAsync(new DetailPage(mail.To,mail.From,mail.Subject,mail.Body));
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        
 
         private async void AddMail()
         {
